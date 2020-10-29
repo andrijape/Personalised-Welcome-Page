@@ -88,7 +88,7 @@ fetch("https://type.fit/api/quotes")
 // Add item to list using Enter or mouse click
 $(function() {
     $('#toDo-input').keyup(function(e) {
-        if(e.keyCode === 13) {
+        if(e.code === 'Enter') {
             if(!$('#toDo-input').val()) {
                 return false;
             };
